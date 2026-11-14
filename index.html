@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fridah John - ICT Professional</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#fff;color:#111;line-height:1.6}
+a{text-decoration:none}
+header{position:sticky;top:0;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:14px 18px;z-index:100;border-bottom:1px solid #eee}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:48px;height:48px;background:#3b0a4a;color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px}
+.logo b{font-size:17px;letter-spacing:.3px;line-height:1.1;white-space:nowrap}
+.logo span{display:block;font-size:10px;letter-spacing:3px;color:#666;font-weight:600;margin-top:3px}
+.menu-btn{width:48px;height:48px;background:#f1f5f9;border:0;border-radius:10px;font-size:24px;cursor:pointer}
+nav{display:none;position:fixed;top:76px;right:12px;background:#3b0a4a;padding:16px;border-radius:14px;z-index:200;min-width:220px}
+nav.show{display:block}
+nav a{display:block;color:#fff;padding:12px 10px;font-weight:600;border-radius:8px}
+nav a:hover{background:#7c3aed}
+.hero{background:#3b0a4a;color:#fff;padding:34px 18px 0}
+.hero-label{color:#d8b4fe;font-size:12px;letter-spacing:3px;font-weight:700}
+.hero-img{width:100%;max-width:480px;display:block;margin:22px auto 0;border-radius:4px;object-fit:cover;aspect-ratio:4/3.4;background:#4c1259}
+.hero h1{font-size:42px;line-height:1;font-weight:900;letter-spacing:-1px;margin:14px 0 0;text-transform:uppercase;white-space:nowrap}
+.hero h2{font-size:24px;text-align:center;text-decoration:underline;text-underline-offset:6px;margin:22px 0}
+.hero p{font-size:17px;color:#f3e8ff;line-height:1.7}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn-blue{background:#7c3aed;color:#fff;padding:13px 18px;border-radius:10px;font-weight:700}
+.btn-outline{border:1px solid #94a3b8;color:#fff;padding:13px 18px;border-radius:10px;font-weight:700}
+.hero-meta{display:flex;gap:22px;margin:22px 0 0;padding-bottom:22px;font-size:14px;color:#e9d5ff}
+.dot{width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;margin-right:6px}
+.profile-section{background:#3b0a4a;padding:22px 18px 36px}
+.profile-card{background:#fff;border-radius:18px;padding:22px}
+.profile-label{font-size:11px;letter-spacing:3px;color:#64748b;font-weight:700}
+.profile-label i{width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;margin-right:8px;font-style:normal}
+.fj-circle{width:88px;height:88px;background:#f3e8ff;color:#7c3aed;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:900;margin:18px 0}
+.profile-img{width:100%;max-width:320px;border-radius:50%;aspect-ratio:1/1;object-fit:cover;display:block;margin:0 auto;background:#eee}
+.profile-card p.role{color:#666;margin:14px 0}
+.profile-row{display:flex;justify-content:space-between;border-top:1px solid #eee;padding:14px 0;font-size:14px}
+.profile-row b{text-align:right}
+.link{color:#7c3aed;font-weight:700}
+.skills{padding:32px 18px}
+.skills-label{color:#7c3aed;font-size:12px;letter-spacing:3px;font-weight:700}
+.skills h2{font-size:34px;line-height:1.1;margin:14px 0}
+.skill-card{border:1px solid #e5e7eb;border-radius:14px;padding:20px;margin-top:16px}
+.num{background:#f3e8ff;color:#7c3aed;width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:18px}
+.skill-card h3{font-size:22px;margin-bottom:8px}
+.skill-card p{color:#64748b;font-size:15px}
+.contact{background:#f5f0ff;padding:34px 18px 40px}
+.contact h2{font-size:32px;line-height:1.1;margin:14px 0 6px}
+.contact p{color:#64748b}
+.btn-dark{background:#3b0a4a;color:#fff;padding:14px 20px;border-radius:10px;font-weight:700;display:inline-block;margin-top:18px}
+.contact-grid{display:grid;gap:12px;margin-top:18px}
+.contact-card{background:#fff;padding:14px;border-radius:12px;border:1px solid #e5e7eb}
+.contact-card b{font-size:13px;color:#64748b}
+.contact-card div{font-weight:700;margin-top:2px}
+footer{background:#3b0a4a;color:#c4b5fd;text-align:center;padding:20px;font-size:13px}
+@media(min-width:700px){
+.hero,.profile-section,.skills,.contact{padding-left:8%;padding-right:8%}
+.hero h1{font-size:68px}
+.contact-grid{grid-template-columns:1fr 1fr 1fr}
+.hero-img{max-width:560px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<div class="logo-mark">FJ</div>
+<div><b>FRIDAH JOHN</b><span>ICT PROFESSIONAL</span></div>
+</div>
+<button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('show')">☰</button>
+</header>
+<nav id="nav">
+<a href="#home">🏠 Home</a>
+<a href="#profile">👤 Profile</a>
+<a href="#skills">💻 Skills</a>
+<a href="#contact">📩 Contact</a>
+</nav>
+<section class="hero" id="home">
+<div class="hero-label">ICT SUPPORT • NETWORKING • INFORMATION SYSTEMS</div>
+<img class="hero-img" src="https://via.placeholder.com/800x700/3b0a4a/ffffff?text=Your+Photo+Here" alt="Fridah John">
+<h1>FRIDAH JOHN</h1>
+<h2>ICT PROFESSIONAL.</h2>
+<p>Hello, I'm Fridah John, an ICT professional with a Diploma in ICT (TVET CDACC Level 6) and practical exposure to ICT support, computer systems, networking and digital services. I am passionate about technology, problem-solving and developing reliable solutions that make work easier.</p>
+<div class="btn-row">
+<a class="btn-blue" href="#skills">Explore my work →</a>
+<a class="btn-outline" href="#contact">Get in touch</a>
+</div>
+<div class="hero-meta"><span><i class="dot"></i> Open to ICT opportunities</span><span>Based in Kenya</span></div>
+</section>
+<section class="profile-section" id="profile">
+<div class="profile-card">
+<div class="profile-label"><i></i> PROFESSIONAL PROFILE</div>
+<div class="fj-circle">FJ</div>
+<img class="profile-img" src="https://via.placeholder.com/500x500/f3e8ff/7c3aed?text=FJ" alt="Fridah John">
+<p class="role">ICT Professional</p>
+<div class="profile-row"><span>Focus</span><b>ICT Support & Systems</b></div>
+<div class="profile-row"><span>Approach</span><b>Practical • Reliable • Curious</b></div>
+<div style="margin-top:6px"><a class="link" href="#skills">More about me →</a></div>
+</div>
+</section>
+<section class="skills" id="skills">
+<div class="skills-label">WHAT I BRING</div>
+<h2>Practical ICT capabilities</h2>
+<a class="link" href="#skills">View all skills →</a>
+<div class="skill-card"><div class="num">01</div><h3>ICT Support</h3><p>End-user assistance, troubleshooting, software installation and computer maintenance.</p></div>
+<div class="skill-card"><div class="num">02</div><h3>Networking</h3><p>Foundational networking knowledge, connectivity support and network troubleshooting.</p></div>
+<div class="skill-card"><div class="num">03</div><h3>Databases & Development</h3><p>Database concepts, SQL foundations and ongoing practice in web and application development.</p></div>
+</section>
+<section class="contact" id="contact">
+<div class="skills-label">LET'S CONNECT</div>
+<h2>Have an ICT opportunity or project?</h2>
+<p>I'd be glad to discuss how I can contribute.</p>
+<a class="btn-dark" href="mailto:Johnfridah468@gmail.com">Contact Fridah →</a>
+<div class="contact-grid">
+<div class="contact-card"><b>Email</b><div>Johnfridah468@gmail.com</div></div>
+<div class="contact-card"><b>Phone</b><div>0715 391 512</div></div>
+<div class="contact-card"><b>Location</b><div>Kenya</div></div>
+</div>
+</section>
+<footer>© 2026 Fridah John • ICT Professional</footer>
+<script>
+document.addEventListener('click', function(e){
+  var nav = document.getElementById('nav');
+  if(!e.target.closest('header') && !e.target.closest('nav')) nav.classList.remove('show');
+});
+document.querySelectorAll('nav a').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('nav').classList.remove('show'); });
+});
+</script>
+</body>
+  </html>
